@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <InteractiveShell>
       <main>
-      <nav className="nav shell">
+        <nav className="nav shell">
         <a className="brand" href="#">TDG<span>.</span></a>
         <div className="nav-links">
           <a href="#work">Work</a>
@@ -48,9 +48,9 @@ export default function Home() {
           <a href="#about">About</a>
         </div>
         <a className="nav-cta" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-      </nav>
+        </nav>
 
-      <section className="hero shell" data-reveal>
+        <section className="hero shell" data-reveal>
         <div className="eyebrow"><span className="status-dot" /> Product builder · AI automation · software</div>
         <h1>I build software<br /><em>for real business problems.</em></h1>
         <p className="hero-copy">
@@ -189,7 +189,7 @@ export default function Home() {
             <span>Business × AI × Software</span>
           </div>
         </div>
-      </footer>
-    </main>
+        </footer>
+      </main>
   );
 }
