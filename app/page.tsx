@@ -181,6 +181,7 @@ export default function Home() {
           <h2>Building something<br /><em>worth solving?</em></h2>
           <p>Start with the business problem. The software comes after.</p>
           <div className="footer-actions">
+            <a className="button footer-button" href="mailto:deguzmantrystan@gmail.com">Email me <span>↗</span></a>
             <a className="button footer-button" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
             <a className="button footer-button secondary-dark" href="https://nova-tdg.vercel.app" target="_blank" rel="noreferrer">View NOVA <span>↗</span></a>
           </div>
