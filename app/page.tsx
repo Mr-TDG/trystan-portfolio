@@ -1,4 +1,6 @@
-import InteractiveShell from "./components/InteractiveShell";\n\nconst capabilities = [
+import InteractiveShell from "./components/InteractiveShell";
+
+const capabilities = [
   {
     number: "01",
     title: "Business systems",
