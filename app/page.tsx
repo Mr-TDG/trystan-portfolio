@@ -1,17 +1,17 @@
 const capabilities = [
   {
     number: "01",
-    title: "Business Systems",
-    text: "I translate messy operational problems into structured software, workflows, and measurable processes.",
+    title: "Business systems",
+    text: "I turn messy operational problems into structured software, workflows, and measurable processes.",
   },
   {
     number: "02",
-    title: "AI Engineering",
-    text: "I integrate AI where it creates leverage while keeping authorization, validation, and business rules outside the model.",
+    title: "AI engineering",
+    text: "I use AI where it creates leverage while keeping authorization, validation, and business rules outside the model.",
   },
   {
     number: "03",
-    title: "Product Building",
+    title: "Product building",
     text: "I take products from idea through architecture, implementation, deployment, QA, and iteration.",
   },
 ];
@@ -27,6 +27,13 @@ const engineering = [
   "Workflow automation",
 ];
 
+const proofPoints = [
+  ["01", "Built", "A real multi-tenant SaaS product"],
+  ["02", "Secured", "AI behind server-enforced boundaries"],
+  ["03", "Deployed", "GitHub → CI → Vercel → production"],
+  ["04", "Learned", "From real production failures and fixes"],
+];
+
 export default function Home() {
   return (
     <main>
@@ -36,9 +43,8 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#engineering">Engineering</a>
           <a href="#about">About</a>
-          <a href="#contact">Contact</a>
         </div>
-        <a className="nav-cta" href="#contact">Let&apos;s talk <span>↗</span></a>
+        <a className="nav-cta" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
       </nav>
 
       <section className="hero shell">
@@ -53,7 +59,7 @@ export default function Home() {
           <a className="button secondary" href="#about">About me</a>
         </div>
         <div className="hero-meta">
-          <span>Based in the Philippines</span>
+          <span>Philippines · open to opportunities</span>
           <span>Building with AI, not hiding behind it.</span>
         </div>
       </section>
@@ -72,6 +78,11 @@ export default function Home() {
             A multi-tenant SaaS platform built to help organizations manage operations,
             connect business data, use AI safely, and move from information to action.
           </p>
+          <div className="nova-proof">
+            <div><strong>Product</strong><span>End-to-end SaaS build</span></div>
+            <div><strong>AI</strong><span>Secure assistant architecture</span></div>
+            <div><strong>Automation</strong><span>Controlled Self-Fix system</span></div>
+          </div>
           <div className="nova-tags">
             <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>OpenAI</span><span>Vercel</span>
           </div>
@@ -80,13 +91,27 @@ export default function Home() {
               <span className="muted">Role</span>
               <strong>Product · Business · AI · Full-stack</strong>
             </div>
-            <a href="https://nova-tdg.vercel.app" target="_blank" rel="noreferrer">Open NOVA <span>↗</span></a>
+            <div className="project-actions">
+              <a href="/nova">Case study <span>↗</span></a>
+              <a href="https://nova-tdg.vercel.app" target="_blank" rel="noreferrer">Open NOVA <span>↗</span></a>
+            </div>
           </div>
         </div>
         <div className="case-note">
-          <span>Case study</span>
-          <p>From business problem → architecture → AI security → controlled automation → production.</p>
-          <span className="soon">Full case study in progress</span>
+          <span>Why it matters</span>
+          <p>NOVA is the project where product thinking, AI engineering, security, deployment, and real-world debugging meet.</p>
+          <a href="/nova">Read the case study <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="proof-strip">
+        <div className="shell proof-grid">
+          {proofPoints.map(([number, title, text]) => (
+            <div className="proof-item" key={number}>
+              <span>{number}</span>
+              <div><strong>{title}</strong><p>{text}</p></div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -132,6 +157,7 @@ export default function Home() {
               I&apos;m using it to demonstrate not only that I can build software, but that I can
               reason about product decisions, AI safety, security, and operational workflows.
             </p>
+            <a className="text-link" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">See my GitHub <span>↗</span></a>
           </div>
         </div>
       </section>
@@ -149,9 +175,12 @@ export default function Home() {
       <footer id="contact" className="footer dark-section">
         <div className="shell">
           <div className="section-label light">Contact</div>
-          <h2>Have a business problem<br /><em>worth building around?</em></h2>
-          <p>Let&apos;s talk about the problem first. The software comes after.</p>
-          <a className="button primary footer-button" href="mailto:hello@trystandeguzman.dev">Get in touch <span>↗</span></a>
+          <h2>Building something<br /><em>worth solving?</em></h2>
+          <p>Start with the business problem. The software comes after.</p>
+          <div className="footer-actions">
+            <a className="button footer-button" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+            <a className="button footer-button secondary-dark" href="https://nova-tdg.vercel.app" target="_blank" rel="noreferrer">View NOVA <span>↗</span></a>
+          </div>
           <div className="footer-bottom">
             <span>© 2026 Trystan De Guzman</span>
             <span>Business × AI × Software</span>
