@@ -1,3 +1,5 @@
+import InteractiveShell from "../components/InteractiveShell";
+
 const sections = [
   {
     number: "01",
@@ -33,7 +35,8 @@ const sections = [
 
 export default function NovaCaseStudy() {
   return (
-    <main className="case-study">
+    <InteractiveShell>
+      <main className="case-study">
       <nav className="nav shell case-nav">
         <a className="brand" href="/">TDG<span>.</span></a>
         <div className="case-nav-links">
@@ -42,7 +45,7 @@ export default function NovaCaseStudy() {
         </div>
       </nav>
 
-      <section className="case-hero shell">
+      <section className="case-hero shell" data-reveal>
         <div className="eyebrow"><span className="status-dot" /> Featured case study · NOVA</div>
         <h1>Building a SaaS<br /><em>from the business problem up.</em></h1>
         <p>
@@ -55,7 +58,7 @@ export default function NovaCaseStudy() {
         </div>
       </section>
 
-      <section className="case-stats">
+      <section className="case-stats" data-reveal>
         <div className="shell case-stats-grid">
           <div><span>Role</span><strong>Product · Business · AI · Full-stack</strong></div>
           <div><span>Stack</span><strong>Next.js · TypeScript · Supabase</strong></div>
@@ -64,7 +67,7 @@ export default function NovaCaseStudy() {
         </div>
       </section>
 
-      <section className="case-content shell">
+      <section className="case-content shell" data-reveal>
         <div className="case-intro">
           <span className="section-label">The build</span>
           <h2>Not a tutorial project.<br /><em>A real product under iteration.</em></h2>
@@ -88,7 +91,7 @@ export default function NovaCaseStudy() {
         </div>
       </section>
 
-      <section className="case-architecture dark-section">
+      <section className="case-architecture dark-section" data-reveal>
         <div className="shell">
           <div className="section-label light">System thinking</div>
           <div className="architecture">
@@ -108,7 +111,7 @@ export default function NovaCaseStudy() {
         </div>
       </section>
 
-      <section className="case-close shell">
+      <section className="case-close shell" data-reveal>
         <div className="section-label">What&apos;s next</div>
         <h2>V2 moves from business operations to <em>organization management.</em></h2>
         <p>
@@ -118,6 +121,7 @@ export default function NovaCaseStudy() {
         </p>
         <a className="text-link" href="/">Return to portfolio <span>↗</span></a>
       </section>
-    </main>
+      </main>
+    </InteractiveShell>
   );
 }
