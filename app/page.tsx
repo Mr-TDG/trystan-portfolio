@@ -1,4 +1,4 @@
-const capabilities = [
+import InteractiveShell from "./components/InteractiveShell";\n\nconst capabilities = [
   {
     number: "01",
     title: "Business systems",
@@ -36,7 +36,7 @@ const proofPoints = [
 
 export default function Home() {
   return (
-    <main>
+    <InteractiveShell>\n      <main>
       <nav className="nav shell">
         <a className="brand" href="#">TDG<span>.</span></a>
         <div className="nav-links">
@@ -47,7 +47,7 @@ export default function Home() {
         <a className="nav-cta" href="https://github.com/Mr-TDG" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
       </nav>
 
-      <section className="hero shell">
+      <section className="hero shell" data-reveal>
         <div className="eyebrow"><span className="status-dot" /> Product builder · AI automation · software</div>
         <h1>I build software<br /><em>for real business problems.</em></h1>
         <p className="hero-copy">
@@ -55,8 +55,8 @@ export default function Home() {
           to turn operational problems into practical software.
         </p>
         <div className="hero-actions">
-          <a className="button primary" href="#work">Explore my work <span>↓</span></a>
-          <a className="button secondary" href="#about">About me</a>
+          <a className="button primary magnetic" href="#work">Explore my work <span>↓</span></a>
+          <a className="button secondary magnetic" href="#about">About me</a>
         </div>
         <div className="hero-meta">
           <span>Philippines · open to opportunities</span>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="feature shell">
+      <section id="work" className="feature shell" data-reveal>
         <div className="section-label">Featured project / 01</div>
         <div className="nova-card">
           <div className="nova-top">
@@ -104,7 +104,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="proof-strip">
+      <section className="proof-strip" data-reveal>
         <div className="shell proof-grid">
           {proofPoints.map(([number, title, text]) => (
             <div className="proof-item" key={number}>
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="engineering" className="dark-section">
+      <section id="engineering" className="dark-section" data-reveal>
         <div className="shell">
           <div className="section-label light">How I build</div>
           <div className="split-heading">
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="about shell">
+      <section id="about" className="about shell" data-reveal>
         <div className="section-label">About</div>
         <div className="about-grid">
           <h2>I&apos;m interested in the space where <em>business problems become systems.</em></h2>
@@ -162,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="principles shell">
+      <section className="principles shell" data-reveal>
         <div className="section-label">Build principles</div>
         <div className="principle-grid">
           <div><strong>01</strong><span>Useful beats impressive.</span></div>
@@ -172,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact" className="footer dark-section">
+      <footer id="contact" className="footer dark-section" data-reveal>
         <div className="shell">
           <div className="section-label light">Contact</div>
           <h2>Building something<br /><em>worth solving?</em></h2>
