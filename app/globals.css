@@ -133,6 +133,7 @@ em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.05em; }
 .footer-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .footer-button { background: var(--acid); color: var(--ink); }
 .secondary-dark { border: 1px solid #3b3b3b; color: white; background: transparent; }
+.copy-email { cursor: pointer; font: inherit; }
 .footer-bottom { margin-top: 120px; border-top: 1px solid #333; padding-top: 18px; display: flex; justify-content: space-between; color: #777; font: 10px "DM Mono", monospace; text-transform: uppercase; }
 
 @media (max-width: 760px) {
