@@ -38,7 +38,8 @@ const proofPoints = [
 
 export default function Home() {
   return (
-    <InteractiveShell>\n      <main>
+    <InteractiveShell>
+      <main>
       <nav className="nav shell">
         <a className="brand" href="#">TDG<span>.</span></a>
         <div className="nav-links">
