@@ -93,6 +93,11 @@ export default function RealEstateAutomationCaseStudy() {
             </p>
           </div>
 
+          <figure className="automation-screenshot">
+            <img src="/project1-workflow.svg" alt="Project 1 AI real estate lead qualification and routing workflow" />
+            <figcaption>Workflow overview: intake, validation, AI qualification, routing, and automated follow-up.</figcaption>
+          </figure>
+
           <div className="automation-flow">
             <div className="flow-node">Lead Webhook</div>
             <div className="flow-arrow">↓</div>
