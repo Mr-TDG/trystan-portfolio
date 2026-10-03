@@ -130,6 +130,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="automation-feature shell" data-reveal>
+        <div className="section-label">Case study / 03 · AI automation</div>
+        <div className="automation-card">
+          <div>
+            <div className="project-kicker">N8N + OPENAI</div>
+            <h2>AI Customer Support<br /><em>Classification & Escalation</em></h2>
+            <p>
+              A customer support triage workflow that validates requests, classifies
+              the issue with structured AI output, and decides between automated support
+              and human escalation.
+            </p>
+          </div>
+          <div className="automation-card-bottom">
+            <div className="automation-tags">
+              <span>n8n</span><span>OpenAI</span><span>Webhooks</span><span>Gmail</span><span>Escalation</span>
+            </div>
+            <a className="button secondary" href="/customer-support-automation">Read case study <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
       <section className="proof-strip" data-reveal>
         <div className="shell proof-grid">
           {proofPoints.map(([number, title, text]) => (
