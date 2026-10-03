@@ -574,3 +574,5 @@ body::before {
   .test-row > span:nth-child(3) { grid-column: 2; }
   .test-row b { grid-column: 3; grid-row: 1; }
 }
+
+.automation-screenshot{margin:55px 0 0;padding:12px;background:#111315;border:1px solid #2d3134;border-radius:20px;overflow:hidden}.automation-screenshot img{display:block;width:100%;height:auto;border-radius:12px}.automation-screenshot figcaption{padding:14px 8px 5px;color:#8f969a;font:10px "DM Mono",monospace;letter-spacing:.03em}@media(max-width:760px){.automation-screenshot{margin-top:40px;padding:7px;border-radius:14px}.automation-screenshot figcaption{padding:10px 5px 3px;line-height:1.5}}
