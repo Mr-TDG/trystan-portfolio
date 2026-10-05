@@ -151,6 +151,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="automation-feature shell" data-reveal>
+        <div className="section-label">Case study / 04 · AI automation</div>
+        <div className="automation-card">
+          <div>
+            <div className="project-kicker">N8N + OPENAI</div>
+            <h2>Smart Appointment<br /><em>Scheduling Automation</em></h2>
+            <p>
+              An appointment workflow that validates requests, classifies scheduling intent,
+              checks Google Calendar availability, handles conflicts, preserves appointment
+              timezones, and sends confirmation or follow-up emails.
+            </p>
+          </div>
+          <div className="automation-card-bottom">
+            <div className="automation-tags">
+              <span>n8n</span><span>OpenAI</span><span>Google Calendar</span><span>Gmail</span><span>Timezone-aware</span>
+            </div>
+            <a className="button secondary" href="/appointment-automation">Read case study <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
       <section className="proof-strip" data-reveal>
         <div className="shell proof-grid">
           {proofPoints.map(([number, title, text]) => (
