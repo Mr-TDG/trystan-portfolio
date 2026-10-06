@@ -172,6 +172,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="automation-feature shell" data-reveal>
+        <div className="section-label">Case study / 05 · AI automation</div>
+        <div className="automation-card">
+          <div>
+            <div className="project-kicker">N8N + OPENAI</div>
+            <h2>AI Business Intelligence<br /><em>& Priority Alerts</em></h2>
+            <p>
+              A business intelligence workflow that validates operational metrics,
+              works from calculated KPIs, produces a structured AI analysis, and routes
+              the result into High, Medium, or Low priority Gmail alerts.
+            </p>
+          </div>
+          <div className="automation-card-bottom">
+            <div className="automation-tags">
+              <span>n8n</span><span>OpenAI</span><span>Webhooks</span><span>Gmail</span><span>Validation</span>
+            </div>
+            <a className="button secondary" href="/business-intelligence-automation">Read case study <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
       <section className="proof-strip" data-reveal>
         <div className="shell proof-grid">
           {proofPoints.map(([number, title, text]) => (
